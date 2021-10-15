@@ -19,7 +19,7 @@ app.engine('ejs', require('ejs').__express);
 app.use('/movies', movieRouter);
 
 app.get('', (req,res) => {
-    res.render('index', {data: result})
+    res.render('index')
 });
 
 app.get('/about', (req,res) => {
